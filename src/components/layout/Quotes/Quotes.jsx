@@ -1,6 +1,9 @@
 // Components
 import QuotesCard from "../../fragments/QuotesCard/QuotesCard";
 
+// Lucide Icon
+import { Leaf } from "lucide-react";
+
 // Image list
 const image = [
   {
@@ -28,9 +31,10 @@ const image = [
 const Quotes = () => {
   return (
     <>
-      <div className="mt-30">
-        <div>
-          <h1 className="text-4xl font-semibold text-[#205044] font-inter text-center mt-10 mb-10">
+      <div className="mt-30 ">
+        <div className="flex items-center flex-row justify-center gap-3">
+          <Leaf className="text-[#205044] " />
+          <h1 className="text-5xl font-semibold text-[#205044] font-inter text-center mt-10 mb-10">
             Kita Semua Berhak Bahagia
           </h1>
         </div>

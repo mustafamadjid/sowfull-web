@@ -3,6 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+// Lucide Icon
+import { BookOpen } from "lucide-react";
+
 // Contents
 const content = [
   {
@@ -33,9 +36,12 @@ const ArticleSide = () => {
 
   return (
     <>
-    <div className="px-[3%]">
-        <h1 className="text-4xl font-semibold text-[#205044] font-inter  mt-10 mb-10">Artikel Untukmu</h1>
-    </div>
+      <div className="px-[3%] flex items-center flex-row justify-start gap-3">
+        <BookOpen className="text-[#205044] "/>
+        <h1 className="text-4xl font-semibold text-[#205044] font-inter  mt-10 mb-10">
+          Artikel Untukmu
+        </h1>
+      </div>
       <div className="lg:container max-lg:w-full ">
         <div className="slider-container">
           <Slider {...settings}>
@@ -43,7 +49,11 @@ const ArticleSide = () => {
               <div key={index} className="banner-slide-item ">
                 {/* Image */}
                 <div>
-                  <img src={item.image} alt="" className="max-h-100 max-w-100 rounded-2xl"/>
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="max-h-100 max-w-100 rounded-2xl"
+                  />
                 </div>
 
                 {/* Text */}
@@ -52,7 +62,9 @@ const ArticleSide = () => {
                     {item.text}
                   </p>
 
-                  <button className="bg-[#3c7c4c] py-2.5 px-3 mt-10 rounded-md text-white font-semibold cursor-pointer hover:bg-[#67aa62] flex items-center justify-center gap-2 hover:gap-5 transition-all duration-300">Selengkapnya</button>
+                  <button className="bg-[#3c7c4c] py-2.5 px-3 mt-10 rounded-md text-white font-semibold cursor-pointer hover:bg-[#67aa62] flex items-center justify-center gap-2 hover:gap-5 transition-all duration-300">
+                    Selengkapnya
+                  </button>
                 </div>
               </div>
             ))}
