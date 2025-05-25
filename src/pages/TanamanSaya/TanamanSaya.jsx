@@ -10,8 +10,8 @@ import {
 // Data dummy tanaman
 const tanamanList = [
   {
-    nama: "Basil",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-WjYtEmDkCPsGyWmKfL0b52uO0Mc7bf579Q&s",
+    nama: "Chamomile",
+    img: "https://media.istockphoto.com/id/469151262/id/foto/chamomile-dalam-pot-terisolasi.jpg?s=612x612&w=0&k=20&c=QwhTUzOxn1sCLbSmuFKtCx8d8MmPtejfO6-B12pkc4E=",
     tanggalTanam: "2025-05-21",
     progress: 80,
     status: "Mendekati Panen",
@@ -23,7 +23,27 @@ const tanamanList = [
     progress: 50,
     status: "Tumbuh Daun",
   },
-  
+  {
+    nama: "Bunga Telang",
+    img: "https://img.mbizmarket.co.id/products/thumbs/800x800/2023/01/26/913434a832e1baa8d6922bd9e1efe635.jpg",
+    tanggalTanam: "2025-05-12",
+    progress: 5,
+    status: "Baru Tertanam",
+  },
+  {
+    nama: "Mint",
+    img: "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/8/31/ef50d92b-1819-477f-8005-debe873e3ce4.jpg",
+    tanggalTanam: "2025-07-05",
+    progress: 15,
+    status: "Tumbuh Daun",
+  },
+  {
+    nama: "Kemangi",
+    img: "https://media.istockphoto.com/id/172641124/id/foto/tanaman-kemangi-pot-siap-untuk-memetik-dan-memasak-dengan.jpg?s=612x612&w=0&k=20&c=1FPU_1WRJIXlR_r90K6B8kaHFZOLxYQEjgaWPNqB9Xo=",
+    tanggalTanam: "2025-08-17",
+    progress: 70,
+    status: "Mendekati Panen",
+  },
 ];
 
 // Quotes data
