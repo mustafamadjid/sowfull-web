@@ -3,6 +3,9 @@ import { MoveRight } from "lucide-react";
 // Framer Motion
 import { motion } from "framer-motion";
 
+// Import Router
+import { Link } from "react-router";
+
 const containerVariants = {
   hidden: {},
   visible: {
@@ -49,16 +52,18 @@ const Banner = () => {
             menemukan keseimbangan dan kebahagiaan dalam hidup anda.
           </motion.p>
 
-          <motion.div
-            className="bg-[#3c7c4c] py-3 px-5 mt-5 rounded-md text-white font-semibold cursor-pointer hover:bg-[#67aa62] flex items-center justify-center gap-2 hover:gap-5 transition-all duration-100"
-            variants={itemVariants}
-            whileTap={{ scale: 0.9 }}
-          >
-            <button className="cursor-pointer">Mulai Sekarang</button>
-            <div className="mt-1">
-              <MoveRight />
-            </div>
-          </motion.div>
+          <Link to={"/tanamansaya"}>
+            <motion.div
+              className="bg-[#3c7c4c] py-3 px-5 mt-5 rounded-md text-white font-semibold cursor-pointer hover:bg-[#67aa62] flex items-center justify-center gap-2 hover:gap-5 transition-all duration-100"
+              variants={itemVariants}
+              whileTap={{ scale: 0.9 }}
+            >
+              <button className="cursor-pointer">Mulai Sekarang</button>
+              <div className="mt-1">
+                <MoveRight />
+              </div>
+            </motion.div>
+          </Link>
         </motion.div>
       </div>
 
