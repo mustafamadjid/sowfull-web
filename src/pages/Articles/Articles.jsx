@@ -62,22 +62,6 @@ const articles = [
   },
 ];
 
-// SVG Daun dekoratif pojok
-const LeafDecoration = () => (
-  <svg
-    className="absolute -top-7 -left-7 w-24 h-24 opacity-30"
-    viewBox="0 0 100 100"
-    fill="none"
-  >
-    <ellipse cx="50" cy="50" rx="50" ry="25" fill="#6c8c56" opacity="0.5" />
-    <path
-      d="M50 10 Q60 30 80 20 Q60 40 50 90 Q40 40 20 20 Q40 30 50 10"
-      fill="#205044"
-      opacity="0.3"
-    />
-  </svg>
-);
-
 // Variants animasi Framer Motion
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -113,7 +97,6 @@ const Articles = () => {
     <>
       <Navbar />
       <div className="relative">
-        <LeafDecoration />
         <div className="font-inter bg-[#fcf4ec] min-h-screen pt-8 pb-12">
           {/* Highlighted Article */}
           <motion.div
