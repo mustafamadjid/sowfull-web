@@ -8,21 +8,21 @@ import Community from "../../components/layout/Community/Community";
 const Home = () => {
   return (
     <>
-      <main className="max-w-[2000px] mx-auto scroll-smooth">
+      <main className="w-full mx-auto scroll-smooth">
         {/* Navbar */}
         <div>
           <Navbar />
         </div>
 
         {/* Banner */}
-        <div className=" w-full min-h-[700px]  flex items-center px-[3%] ">
+        <div className=" w-full min-h-[700px]">
           <div>
             <Banner />
           </div>
         </div>
 
         {/* Quotes */}
-        <div className="w-full min-h-[600px] px-[3%] mt-[100px]">
+        <div className="w-full min-h-[600px] px-[3%] mb-[50px] ">
           <Quotes />
         </div>
 

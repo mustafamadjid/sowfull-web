@@ -6,6 +6,9 @@ import Slider from "react-slick";
 // Lucide Icon
 import { BookOpen } from "lucide-react";
 
+// Import Router
+import { Link } from "react-router";
+
 // Contents
 const content = [
   {
@@ -36,12 +39,16 @@ const ArticleSide = () => {
 
   return (
     <>
-      <div className="px-[3%] flex items-center flex-row justify-start gap-3">
-        <BookOpen className="text-[#205044] "/>
-        <h1 className="text-4xl font-semibold text-[#205044] font-inter  mt-10 mb-10">
-          Artikel Untukmu
-        </h1>
-      </div>
+      <Link to={"/articles"}>
+        <div className="px-[3%] flex items-center flex-row justify-start gap-3">
+          <BookOpen className="text-[#205044] " />
+          <h1 className="text-4xl font-semibold text-[#205044] font-inter  mt-10 mb-10 cursor-pointer">
+            Artikel Untukmu
+          </h1>
+        </div>
+      </Link>
+
+      {/* Slider */}
       <div className="lg:container max-lg:w-full ">
         <div className="slider-container">
           <Slider {...settings}>

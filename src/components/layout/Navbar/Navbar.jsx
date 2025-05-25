@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-[5%] py-[28px]">
+      <nav className="flex justify-between items-center px-[4%] py-[28px]">
         {/* Menu */}
         <div className="flex gap-10">
           {menu.map((item, index) => (
@@ -53,8 +53,8 @@ const Navbar = () => {
         <div>
           <h1 className="text-4xl font-inter font-bold ">
             {" "}
-            <span className="text-[#6c8c56]">Mind</span>
-            <span className=" text-[#205044]">Bloom</span>
+            <span className="text-[#6c8c56]">Sow</span>
+            <span className=" text-[#205044]">Ful</span>
           </h1>
         </div>
       </nav>

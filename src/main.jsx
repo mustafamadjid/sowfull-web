@@ -6,19 +6,24 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 
 // Toastify
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
+
 
 // CSS
 import "./index.css";
 
 // Components
 import Home from "./pages/home/Home";
+import Articles from "./pages/Articles/Articles";
 
 // Router path
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/articles",
+    element: <Articles />,
   },
 ]);
 
