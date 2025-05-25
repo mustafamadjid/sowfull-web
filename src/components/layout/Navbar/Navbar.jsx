@@ -21,8 +21,12 @@ const menu = [
   },
   {
     title: "Beli Sekarang",
-    path: "/belisekarang",
+    path: "/katalog",
   },
+  {
+    title: "Artikel",
+    path: "/articles",
+  }
 ];
 
 const Navbar = () => {
@@ -54,8 +58,10 @@ const Navbar = () => {
           <h1 className="text-4xl font-inter font-bold ">
             {" "}
             <span className="text-[#6c8c56]">Sow</span>
-            <span className=" text-[#205044]">Ful</span>
+            <span className=" text-[#205044]">Full</span>
           </h1>
+
+         
         </div>
       </nav>
     </>

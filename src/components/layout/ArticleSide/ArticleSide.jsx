@@ -40,9 +40,9 @@ const ArticleSide = () => {
   return (
     <>
       <Link to={"/articles"}>
-        <div className="px-[3%] flex items-center flex-row justify-start gap-3">
+        <div className="px-[3%] flex items-center flex-row justify-start gap-3 ">
           <BookOpen className="text-[#205044] " />
-          <h1 className="text-4xl font-semibold text-[#205044] font-inter  mt-10 mb-10 cursor-pointer">
+          <h1 className="text-4xl font-semibold text-[#205044] font-inter  mt-10 mb-10 cursor-pointer hover:text-green-700">
             Artikel Untukmu
           </h1>
         </div>

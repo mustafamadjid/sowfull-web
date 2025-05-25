@@ -63,7 +63,7 @@ const Banner = () => {
       </div>
 
       {/* Illustration */}
-      <motion.div variants={itemVariants} className="mt-10">
+      <motion.div variants={itemVariants} className="mt-25">
         <img
           src="/assets/ilustration_2.png"
           alt=""
