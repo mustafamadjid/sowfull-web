@@ -55,7 +55,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex items-center ">
-          <img src="assets/Logo/Sowfull Hijau.png" alt="" className="w-12 object-cover relative bottom-1"/>
+          <img src="../assets/Logo/Sowfull Hijau.png" alt="" className="w-12 object-cover relative bottom-1"/>
           <h1 className="text-4xl font-inter font-bold ">
             {" "}
             <span className="text-[#6c8c56]">Sow</span>

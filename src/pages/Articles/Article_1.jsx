@@ -1,25 +1,12 @@
 import { FaLeaf, FaChevronLeft } from "react-icons/fa";
+
+// Import Component
 import Navbar from "../../components/layout/Navbar/Navbar";
 import { Link } from "react-router";
 
-// SVG Daun dekoratif (opsional)
-const LeafDecoration = () => (
-  <svg
-    className="absolute -top-7 -right-7 w-28 h-28 opacity-20"
-    viewBox="0 0 100 100"
-    fill="none"
-  >
-    <ellipse cx="50" cy="50" rx="50" ry="25" fill="#6c8c56" opacity="0.7" />
-    <path
-      d="M50 10 Q60 30 80 20 Q60 40 50 90 Q40 40 20 20 Q40 30 50 10"
-      fill="#205044"
-      opacity="0.5"
-    />
-  </svg>
-);
 
 const Article1 = () => {
-  // Contoh data artikel (bisa diambil dari props/params/context/dll)
+  // Contoh data artikel 
   const article = {
     title: "Kesehatan Mental & Tanaman: Menenangkan Jiwa dengan Alam",
     img: "https://images.unsplash.com/photo-1606103836293-0a063ee20566?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -36,9 +23,7 @@ const Article1 = () => {
   return (
     <>
       <Navbar />
-
       <div className="bg-[#fcf4ec] min-h-screen font-inter relative">
-        <LeafDecoration />
         <div className="max-w-2xl mx-auto px-5 pt-6 pb-14 relative z-10">
           {/* Tombol Kembali */}
           <div className="mb-6">
